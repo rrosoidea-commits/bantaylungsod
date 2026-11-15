@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bantay Lungsod: COVID-19 Outbreak Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="screen" id="title"></section>
+<section class="screen" id="missions"></section>
+<section class="screen" id="setup"></section>
+<section class="screen" id="history"></section>
+<section class="screen" id="results"></section>
+<section class="screen" id="about"></section>
+<section class="screen" id="play">
+  <canvas id="stage"></canvas>
+  <div class="stripe"></div>
+  <div id="labels"></div>
+  <div id="nogl"><div class="panel"><h2>3D view is not available</h2><p>This browser could not start WebGL, so the scene cannot be drawn. The model still runs: open the Dashboard to see the results.</p></div></div>
+  <div class="glass" id="pTL"></div>
+  <div class="glass" id="pTC"></div>
+  <div class="glass" id="pTR"></div>
+  <div class="glass" id="pNote"></div>
+  <div class="glass" id="pSpeed"></div>
+  <div class="glass" id="pPause"></div>
+  <div class="glass" id="pLeft"></div>
+  <div class="glass" id="pMap"><span class="eyebrow" style="color:var(--mute)">Site map</span><canvas id="map" width="352" height="184"></canvas></div>
+  <div class="glass" id="pBanner"></div>
+  <div id="pWhy"></div>
+  <div class="glass" id="pPop"></div>
+  <div class="glass" id="pCards"></div>
+  <div class="glass" id="pReplay"></div>
+  <div class="glass" id="pAlt"></div>
+  <div class="glass" id="pZoom"></div>
+  <div class="glass" id="pCard"></div>
+  <div class="glass" id="drawer"></div>
+  <div class="glass" id="log"></div>
+  <div class="glass" id="pBR"></div>
+</section>
+<div id="modal"><div class="panel" id="modalBody"></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script src="scenes.js"></script>
+<script src="ui.js"></script>
+<script src="play.js"></script>
+<script src="dash.js"></script>
+</body>
+</html>
